@@ -1,0 +1,49 @@
+/* Today's Weather tokens. Original palette, no third-party brand values. */
+:root {
+  /* Core */
+  --ink: #22263a; /* Night ink: text, primary action */
+  --dusk: #4a4f66; /* secondary text */
+  --dusk-2: #6b7088; /* tertiary text */
+  --mist: #f6f7fa; /* page */
+  --mist-2: #f0f2f6;
+  --white: #ffffff;
+
+  /* Sun: the brand accent */
+  --sun: #ffc94d;
+  --sun-light: #ffe7a3;
+  --sun-strong: #e0a100; /* selected border */
+  --sun-soft: #f5d27a; /* hover border */
+  --sunlit: #fff6da; /* selected fill */
+  --sun-text: #8a6400;
+
+  /* Lines */
+  --line: #eceef3;
+  --line-strong: #9a9fb3;
+  --line-disabled: #d5d8e2;
+
+  /* Skies */
+  --sky-calm: #eef1f7;
+  --sky-clear: #fff1c9;
+  --sky-partly: #e3ecf7;
+  --sky-fog: #e9eaf0;
+  --sky-drizzle: #cfdcf2;
+  --sky-storm: #6e7a91;
+  --storm-ink: #5e6a82;
+  --rain: #6f93d8;
+  --rain-soft: #a9c0ea;
+  --calm-blue: #eef2f9;
+
+  /* Shape */
+  --radius-card: 12px;
+  --radius-pill: 999px;
+  --radius-sheet: 24px;
+
+  /* Elevation: ink-tinted, soft */
+  --elev-1: 0 2px 8px 0 rgb(34 38 58 / 6%);
+  --elev-3: 0 8px 16px 0 rgb(34 38 58 / 8%);
+  --elev-4: 0 16px 32px 0 rgb(34 38 58 / 10%);
+
+  /* Type: Anuphan covers Thai and Latin in one family */
+  --font: "Anuphan", system-ui, sans-serif;
+  --font-th: "Anuphan", system-ui, sans-serif;
+}
