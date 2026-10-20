@@ -2,7 +2,7 @@
 
 A 2-minute emotional check-in that uses weather as a shared language. People pick how the weather feels inside them, how long it has lasted and what is in the clouds. The app turns those answers into a short forecast card: words they can keep, send to someone they trust, or use as a first message to a counsellor.
 
-**Live:** https://todays-weather.vercel.app
+**Live:** https://todays-weather-mike.vercel.app
 
 ## Flow
 
