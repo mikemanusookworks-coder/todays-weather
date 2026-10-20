@@ -1,7 +1,7 @@
 import type { CSSProperties } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import type { Weather } from "../content";
-import { weatherArt } from "./weatherArt";
+import { artSvg } from "./weatherArt";
 
 /** The stage illustration: one original weather drawing, with light motion overlays for fog and rain. */
 export function SkyArt({ art, weather, size = 240 }: { art: Weather; weather?: Weather | null; size?: number }) {
@@ -15,7 +15,7 @@ export function SkyArt({ art, weather, size = 240 }: { art: Weather; weather?: W
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.98 }}
           transition={{ duration: 0.32, ease: [0.2, 0.8, 0.2, 1] }}
-          dangerouslySetInnerHTML={{ __html: weatherArt[art] }}
+          dangerouslySetInnerHTML={{ __html: artSvg(art, "stage") }}
         />
       </AnimatePresence>
       {weather === "fog" && (

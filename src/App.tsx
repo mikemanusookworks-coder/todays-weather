@@ -20,7 +20,7 @@ import {
   type WhoKnows,
 } from "./content";
 import { SkyArt, WeatherIcon } from "./components/Sky";
-import { weatherArt } from "./components/weatherArt";
+import { artSvg } from "./components/weatherArt";
 import { Logo } from "./components/Logo";
 import { initialLang, persistLang } from "./lang";
 
@@ -389,7 +389,7 @@ export default function App() {
                   >
                     {forecast}
                   </div>
-                  <div className="forecast-art" aria-hidden dangerouslySetInnerHTML={{ __html: weatherArt[weather] }} />
+                  <div className="forecast-art" aria-hidden dangerouslySetInnerHTML={{ __html: artSvg(weather, "card") }} />
                 </div>
                 <button className="btn-primary" onClick={() => go("next")}>
                   {t(ui.continue)}

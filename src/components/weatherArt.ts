@@ -19,3 +19,8 @@ export const weatherArt: Record<Weather, string> = {
     <path d="M172 150l-26 42h26l-18 40 50-58h-28l18-24z" fill="#FFC94D"/>
     <g stroke="#7E8BA6" stroke-width="7" stroke-linecap="round">${[[92,172],[118,196],[230,170],[252,196]].map(([x,y])=>`<line x1="${x}" y1="${y}" x2="${x-8}" y2="${y+22}"/>`).join("")}</g></svg>`,
 };
+
+/** Gradient ids must be unique per instance: a duplicate id inside a hidden copy breaks url(#id) fills in Chrome. */
+export function artSvg(w: Weather, suffix: string): string {
+  return weatherArt[w].replace(/id="(\w+)"/g, `id="$1-${suffix}"`).replace(/url\(#(\w+)\)/g, `url(#$1-${suffix})`);
+}
